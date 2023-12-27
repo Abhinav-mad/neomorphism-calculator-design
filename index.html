@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylce.css">
+</head>
+<body>
+    <h3>C.A.L.C <span>E</span></h3>
+    <div class="container">
+
+        <div class="calc-box">
+            
+            <form action="">
+                <input id="disResult" class="text"   type="text"  placeholder="0" readonly>
+                <br>
+                <input class="button" type="button" value="7" onclick="disResult.value +='7'">
+                <input class="button" type="button" value="8" onclick="disResult.value +='8'">
+                <input class="button" type="button" value="9" onclick="disResult.value +='9'">
+                <input class="button mathButton" type="button" value="+" onclick="disResult.value +='+'">
+                <br>
+                <input class="button" type="button" value="4" onclick="disResult.value +='4'">
+                <input class="button" type="button" value="5" onclick="disResult.value +='5'">
+                <input class="button" type="button" value="6" onclick="disResult.value +='6'">
+                <input class="button mathButton" type="button" value="-" onclick="disResult.value +='-'">
+                <br>
+                <input class="button" type="button" value="1" onclick="disResult.value +='1'">
+                <input class="button" type="button" value="2" onclick="disResult.value +='2'">
+                <input class="button" type="button" value="3" onclick="disResult.value +='3'">
+                <input class="button mathButton" type="button" value="x" onclick="disResult.value +='*'">
+                <br>
+                <input class="button" type="button" value="0" onclick="disResult.value +='0'">
+                <input class="button" type="button" value="00" onclick="disResult.value +='00'">
+                <input class="button" type="button" value="%" onclick="disResult.value +='%'">
+                <input class="button mathButton" type="button" value="/" onclick="disResult.value +='/'">
+                <br>
+
+                <input class="button" type="button" value="." style="padding-bottom: 5px; font-size: 19px; font-weight: 750;" onclick="disResult.value +='.'">
+                <input class="button del" type="button" value="DEL"  onclick="disResult.value =disResult.value.slice(0,-1)">
+                <input class="button clear" type="button" value="C" onclick="disResult.value =''">
+                <input class="button  equal" type="button" value="=" onclick="disResult.value =eval(disResult.value)">
+                <br>
+
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
